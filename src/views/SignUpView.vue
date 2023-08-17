@@ -1,9 +1,9 @@
 <template>
-    <h3>About Page</h3>
+    <h3>Sign Up Page</h3>
 </template>
 
 <script>
 export default {
-  name: 'AboutView'
+    name: 'SignUpView'
 }
 </script>
