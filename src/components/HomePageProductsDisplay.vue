@@ -1,35 +1,53 @@
 <template>
-    <div class="big-div">
-        <div>
-        <h3>Motherboards</h3>
-        <div class="image-div"></div>
+  <div class="big-div">
+    <div class="product-div">
+      <h3>Motherboards</h3>
+      <img
+        src="https://i.postimg.cc/HxntsbQ9/cropped-1920-1080-756295.jpg"
+        alt="motherboard"
+      />
     </div>
-    <div>
-        <h3>Graphics Cards</h3>
-        <div class="image-div"></div>
+    <div class="product-div">
+      <h3>Graphics Cards</h3>
+      <img
+        src="https://i.postimg.cc/sgvP4HC5/Nvidia-RTX-4090.png"
+        alt="nvidia gpu"
+      />
     </div>
-    <div>
-        <h3>Processors</h3>
-        <div class="image-div"></div>
+    <div class="product-div">
+      <h3>Processors</h3>
+      <img
+        src="https://i.postimg.cc/W4VC5Y0Y/AMD-Ryzen-Desktop-CPUs.jpg"
+        alt="amd cpu"
+      />
     </div>
-    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'HomePageProductsDisplay'
-}
+  name: "HomePageProductsDisplay",
+};
 </script>
 
 <style scoped>
-.big-div{
-    background-color: violet;
-    display: flex;
-    justify-content: space-evenly;
+.big-div {
+  background: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto auto auto auto;
 }
-.image-div{
-    width: 150px;
-    height: 100px;
-    background-color: gray;
+.product-div{
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+img {
+  width: 480px;
+  height: 270px;
+  position: center center;
+}
+h3{
+    color: black;
 }
 </style>

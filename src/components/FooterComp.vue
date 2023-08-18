@@ -1,8 +1,8 @@
 <template>
     <footer>
-        <h4>MSI</h4>
-        <h4>NVIDIA</h4>
-        <h4>AMD</h4>
+        <img class="msi-logo" src="https://i.postimg.cc/wxbdjCrY/pngwing-com.png" alt="msi">
+        <img class="nvidia-logo" src="https://i.postimg.cc/j5V8LXbT/Nvidia-Geforce-RTX-New-Badge-2022ihqiyiuqehfi.png" alt="nvidia-rtx">
+        <img class="amd-logo" src="https://i.postimg.cc/PxNqvXf1/AMD-Ryzen-logo-svg.png" alt="amd">
         <h4>&copy;All Rights Reserved</h4>
     </footer>
 </template>
@@ -17,7 +17,25 @@ export default {
 footer{
     display: flex;
     justify-content: space-evenly;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+}
+.amd-logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100px;
+    height: 56.25px;
+}
+.nvidia-logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 160px;
+    height: 45px;
+}
+.msi-logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 110px;
+    height: 45px;
 }
 </style>
