@@ -36,6 +36,6 @@ footer{
     margin-top: auto;
     margin-bottom: auto;
     width: 110px;
-    height: 45px;
+    height: 55px;
 }
 </style>

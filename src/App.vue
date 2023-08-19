@@ -18,7 +18,7 @@ export default {
 
 <style>
 html{
-  background-image: url(https://i.postimg.cc/h4kCb6DT/sep09.jpg);
+  background-image: url(https://i.postimg.cc/vHy6VBXF/1e92c955f5c201bfeef900517617c163.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

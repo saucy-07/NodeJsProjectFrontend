@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <router-link class="store-logo" to='/'>Store Logo</router-link>
+        <router-link class="store-logo" to='/'>BBPCC™</router-link>
         <div class="router-link-div">
         <router-link class="router-link" to="/src/views/ProductsView.vue">Products</router-link>
         <router-link class="router-link" to='/src/views/AboutView.vue'>About</router-link>
