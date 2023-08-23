@@ -37,17 +37,18 @@ export default {
   justify-content: space-evenly;
   margin: auto auto auto auto;
 }
-.product-div{
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+.product-div {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 img {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   width: 480px;
   height: 270px;
   position: center center;
 }
-h3{
-    color: black;
+h3 {
+  color: black;
 }
 </style>

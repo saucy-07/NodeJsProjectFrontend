@@ -1,6 +1,6 @@
 <template>
     <div class="hero-div">
-        <p class="store-logo"><i><b>BIG DADDY PC COMPANY™</b></i></p>
+        <p class="store-logo"><i><b>BIG DADDY'S PC COMPANY™</b></i></p>
         <p class="slogan"><i><b>STRUGGLING TO FIND THE BEST PC DEALS?
             <br>
             DON'T WORRY... DADDY'S GOTCHA!</b></i></p>
@@ -17,22 +17,23 @@ export default {
 .hero-div{
     margin: 10px 0 10px 0;
     width: 100%;
-    height: 500px;
-    background-image: url(https://i.postimg.cc/MHRnh9hn/wallpaperflare-com-wallpaper-1.jpg);
+    height: 600px;
+    background-image: url(https://i.postimg.cc/fyJg6L2K/daniel-lezuch-I4-Dc-RJ-Evd8-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 .store-logo{
-    margin: 0 auto 20px 20px;
+    margin: 0 auto auto 15px;
     color: orangered;
     font-size: 100px;
 }
 .slogan{
     width: 950px;
-    text-align: right;
-    color: orange;
+    text-align: left;
+    color: rgb(255, 255, 255);
     font-size: 45px;
-    margin: 225px 15px 0 auto;
+    margin: 50vh auto 0 15px;
 }
 </style>
