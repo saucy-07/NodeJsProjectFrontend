@@ -16,7 +16,7 @@
             <td>{{product.amount}}</td>
             <td>{{product.Category}}</td>
             <td>{{product.prodUrl}}</td>
-            <td><button class="edit">Edit</button><button class="delete">Delete</button></td>
+            <td><router-link :to="{ path: '../views/'+product.prodID+'/EditProductView.vue'}"><button class="edit">Edit</button></router-link><button @click="deleteProduct(product.prodID)" class="delete">Delete</button></td>
         </tr>
     </table>
     <div class="add-product-div">
@@ -25,10 +25,12 @@
             <h3>Add Products Menu</h3>
         </AddProductsComp>
     </div>
+    <div class="add-users-div">
+        <router-link to="../views/AddUserView.vue"><button class="add-user-btn">User</button></router-link>
+    </div>
 </template>
 
 <script>
-import AddProductsCompVue from "@/components/AddProductsComp.vue"
 import { onMounted } from "vue"
 import axios from 'axios'
 import {ref} from 'vue'
@@ -62,6 +64,12 @@ export default {
             axios.get('https://node-fullstack.onrender.com/products').then(res => {
                 this.products = res.data.results
                 console.log(this.products)
+            })
+        },
+        deleteProduct(prodID){
+            console.log(prodID)
+            axios.delete(`https://node-fullstack.onrender.com/products/${prodID}`).then(res => {
+             this.getProducts();
             })
         },
     }
@@ -124,7 +132,7 @@ td{
     width: 100%;
     text-align: center;
 }
-.add-product-btn{
+.add-product-btn, .add-user-btn{
     cursor: pointer;
     justify-content: center;
     margin: 0 auto 0 auto;
